@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self'"> -->
+    </head>
+    <body>
+        <div id='asd' >
+        </div>
+    </body>
+    <script>
+        const {search = ''} = window.location
+        const value = search.substr(5)
+        const dom = document.getElementById('asd')
+        console.log('value', value)
+        dom.innerHTML = value
+    </script>
+</html>
